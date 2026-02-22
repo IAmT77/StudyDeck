@@ -1,0 +1,52 @@
+name: StudyDeck
+options:
+  minimumXcodeGenVersion: 2.38.0
+settings:
+  base:
+    MACOSX_DEPLOYMENT_TARGET: 13.0
+targets:
+  StudyDeck:
+    type: application
+    platform: macOS
+    sources:
+      - path: StudyDeck
+    resources:
+      - path: StudyDeck/Resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zofunedu.studydeck
+        INFOPLIST_KEY_CFBundleDisplayName: StudyDeck
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.education
+        INFOPLIST_KEY_NSHumanReadableCopyright: Copyright © 2026 ZoFunEdu
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: 5.9
+    scheme:
+      testTargets:
+        - StudyDeckTests
+        - StudyDeckUITests
+
+  StudyDeckTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: StudyDeckTests
+    dependencies:
+      - target: StudyDeck
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zofunedu.studydeck.tests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: 5.9
+
+  StudyDeckUITests:
+    type: bundle.ui-testing
+    platform: macOS
+    sources:
+      - path: StudyDeckUITests
+    dependencies:
+      - target: StudyDeck
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zofunedu.studydeck.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: 5.9

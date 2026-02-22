@@ -1,0 +1,20 @@
+[
+  {
+    "id": "D6ED949E-4A07-4C5C-9E44-3D9FA3C31421",
+    "title": "Welcome to StudyDeck",
+    "summary": "Get familiar with the app, topics, and chapter layout.",
+    "section": "Getting Started"
+  },
+  {
+    "id": "2FE94952-5D5D-4E8C-AC24-7C24EA0CE12D",
+    "title": "Spaced Repetition Basics",
+    "summary": "Learn how spaced repetition can improve retention.",
+    "section": "Learning Science"
+  },
+  {
+    "id": "3B4A58D5-0A79-4E25-8DF5-1502D77A8A98",
+    "title": "Active Recall Workflows",
+    "summary": "Practical methods to turn reading into active retrieval.",
+    "section": "Learning Science"
+  }
+]
